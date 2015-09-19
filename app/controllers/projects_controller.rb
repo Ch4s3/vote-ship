@@ -8,6 +8,12 @@ class ProjectsController < ApplicationController
   def show
   end
 
+  def voting
+    @projects = Project.all
+    uuid = params[:uuid]
+    @person = Person.where(uuid: uuid)
+  end
+
   def vote
     person = Person.find(projects_params[:person_id])
     if person.has_voted?
