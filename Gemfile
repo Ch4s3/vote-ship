@@ -12,6 +12,8 @@ gem "jbuilder", "~> 2.0"
 gem "haml", "~> 4.0.5"
 gem "haml-rails", "~> 0.9"
 gem "unicorn"
+gem 'sprockets'
+gem 'sprockets-es6'
 
 group :development, :test do
   gem "byebug"
