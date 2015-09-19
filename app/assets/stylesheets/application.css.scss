@@ -1,0 +1,29 @@
+// ---------------------------
+// Third Party Libraries
+// ---------------------------
+@import "bootstrap/bootstrap";
+
+// ---------------------------
+// Variables
+// ---------------------------
+
+$light-blue-background: #145362;
+$dark-blue-background: #145362;
+$gray-background: #acacac;
+$medium-blue-link: #1c8684;
+$hover-blue-link: #b3ebea;
+$black: #211914;
+$white: #FDFCFC;
+// Because of the way colors work, we shouldn't actually use
+// true black or white, just colors that we can stand in for them.
+
+//---------------------------
+// Vote-Ship CSS
+//---------------------------
+
+@font-face {
+  font-family: "FTAnchorYard";
+  src: image-url("FTAnchorYard-Regular.ttf") format("truetype");
+}
+
+@import "nav"
