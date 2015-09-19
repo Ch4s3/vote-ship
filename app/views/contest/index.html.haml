@@ -1,1 +1,5 @@
 .container-fluid
+  %div.col-lg-8.col-lg-offset-2.text-center
+    - @people.each do |person|
+      %div.col-lg-12 
+        = person
