@@ -1,0 +1,16 @@
+.container-fluid
+  %div.col-xl-8.col-xl-offset-2.col-lg-12.col-lg-offset-0.text-center.projects-container
+    - @projects.each do |project|
+      %div.col-lg-10.project-div
+        =image_tag(project.url, :class => 'project-photo')
+        %h2
+          =project.name
+        %p
+          =project.description
+      %div.col-lg-2.media
+        %div.row.media-middle
+          %h2 Vote
+          =form_tag('/vote', method: 'post') do
+            =hidden_field_tag(project.id, @person.uuid)
+            =button_tag(type: "submit", class: "voting-btns") do
+              %i.fa.fa-arrow-up.green
