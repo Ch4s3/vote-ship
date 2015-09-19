@@ -3,6 +3,7 @@ class ContestController < ApplicationController
   end
 
   def index
+    @people = Person.all
   end
 
   def create
