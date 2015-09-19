@@ -11,7 +11,7 @@ class ProjectsController < ApplicationController
   def voting
     @projects = Project.all
     uuid = params[:uuid]
-    @person = Person.where(uuid: uuid)
+    @person = Person.where(uuid: uuid).first
   end
 
   def vote
