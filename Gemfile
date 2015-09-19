@@ -21,6 +21,7 @@ group :development, :test do
   gem "hirb"
   gem "pry-rails"
   gem "pry-stack_explorer"
+  gem "rspec-rails", "~> 3.0"
 end
 
 group :development do
