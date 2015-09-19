@@ -11,6 +11,9 @@ class ContestController < ApplicationController
   def update
   end
 
+  def show
+  end
+
   def edit
   end
 end
