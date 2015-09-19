@@ -1,13 +1,5 @@
 Rails.application.routes.draw do
-  get 'contest/new'
-
-  get 'contest/index'
-
-  get 'contest/create'
-
-  get 'contest/update'
-
-  get 'contest/edit'
+  resources :contests
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
