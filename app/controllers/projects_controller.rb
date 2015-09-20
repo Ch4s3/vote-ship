@@ -29,7 +29,9 @@ class ProjectsController < ApplicationController
       redirect_to :root
     else
       project = Project.find(params["project_id"])
-      person.vote_for project
+      binding.pry
+      person.vote_for(project)
+
       flash[:success] = "Thanks for voting!"
       redirect_to :root
     end
