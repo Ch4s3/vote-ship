@@ -1,14 +1,14 @@
 .container-fluid
   %div.col-xl-8.col-xl-offset-2.col-lg-12.col-lg-offset-0.text-center.projects-container
     - @projects.each do |project|
-      %div.col-lg-10 
-        =image_tag(project.url, :class => 'project-photo')
+      %div.col-lg-10
+        = image_tag(project.url, :class => 'project-photo')
         %h2
-          =project.name
+          = project.name
         %p
-          =project.description
+          = project.description
       %div.col-lg-2.media
         %div.row.media-middle
           %h2 Total Votes
           %p.vote-count
-            =project.vote_count
+            = project.vote_count

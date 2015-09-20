@@ -11,6 +11,7 @@
         %div.row.media-middle
           %h2 Vote
           =form_tag('/vote', method: 'post') do
-            =hidden_field_tag(project.id, @person.uuid)
+            =hidden_field_tag(:project_id, project.id)
+            =hidden_field_tag(:uuid, @person.uuid)
             =button_tag(type: "submit", class: "voting-btns") do
               %i.fa.fa-arrow-up.green
