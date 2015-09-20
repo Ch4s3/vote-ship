@@ -11,6 +11,7 @@ class Person < ActiveRecord::Base
       vote = Vote.new(person: self, project: project)
       if vote.save
         self.voted = true
+        self.save
         vote
       else
         :fail

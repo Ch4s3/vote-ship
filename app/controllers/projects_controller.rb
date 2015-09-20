@@ -9,7 +9,7 @@ class ProjectsController < ApplicationController
   end
 
   def voting
-    @projects = Project.all
+    @projects = Project.all.shuffle
     uuid = params[:uuid]
     @person = Person.where(uuid: uuid).first
     if @person.nil?
