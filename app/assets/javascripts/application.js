@@ -13,5 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require unobtrusive_flash
+//= require unobtrusive_flash_bootstrap
 require: 'sprockets/es6'
 //= require_tree .
